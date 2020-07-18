@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5dd6f4"
+    tools:context=".OpportunisticActivity">
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello1!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xValue"
+        android:text="Hello2!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/zValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yValue"
+        android:text="Hello3!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+
+    <TextView
+        android:id="@+id/xgyroValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zValue"
+        android:text="Hellog1!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+    <TextView
+        android:id="@+id/ygyroValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xgyroValue"
+        android:text="Hellog2!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <TextView
+        android:id="@+id/zgyroValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ygyroValue"
+        android:text="Hellog3!"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter Name" />
+
+    <Spinner
+        android:id="@+id/spinnerAllowPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30sp"
+        android:entries="@array/AllowPermission"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLocation"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerAllowPermission"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Enter Location"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginLeft="100dp"
+        android:text="Allow Permission"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStart"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Stop" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonStop"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+
+</RelativeLayout>
